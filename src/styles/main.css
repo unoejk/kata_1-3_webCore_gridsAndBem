@@ -55,11 +55,11 @@ p+p{
 
 
 /*----------------noRepeat*/
-.theBtn{
+.the-btn{
     display: flex;
     align-items: center;
 }
-.theBtn__text{
+.the-btn__text{
     color: #1B1C21;
     font-family: 'TT Lakes', sans-serif;
     font-size: 16px;
@@ -68,7 +68,7 @@ p+p{
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
 }
-.theBtn__svg{
+.the-btn__svg{
     display: block;
 }
 
@@ -92,11 +92,11 @@ p+p{
 .header__item{
     height: 40px;
 }
-.header__itemBtn{
+.header__item-btn{
     border-radius: 50%;
     gap: 16px;
 }
-.header__itemBtn:focus{
+.header__item-btn:focus{
     outline: 4px solid #B8FFEC;
 }
 .header__separator{
@@ -107,7 +107,7 @@ p+p{
     margin: 4px;
 }
 
-.logoSvg{
+.logo-svg{
     display: block;
     height: 50px;
 }
@@ -125,16 +125,16 @@ p+p{
 
 /*----------------title*/
 
-.titleBlock{
+.title-block{
     position: relative;
 }
-.titleBlock__highlightSvg{
+.title-block__highlight-svg{
     width: 4px;
     height: 100%;
     position: absolute;
     left: 0;
 }
-.titleBlock__text{
+.title-block__text{
     padding: 0 16px;
 
     color: #1B1C21;
@@ -149,33 +149,33 @@ p+p{
 
 /*----------------nav*/
 
-.navBlock{
+.nav-block{
     position: relative;
 }
-.navBlock:before,.navBlock:after{
+.nav-block:before,.nav-block:after{
     content: '';
     position: absolute;
     top: 0;
     width: 16px;
     height: 100%;
 }
-.navBlock:before{
+.nav-block:before{
     left: 0;
     background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%)
 }
-.navBlock:after{
+.nav-block:after{
     right: 0;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%)
 }
-.navBlock__list{
+.nav-block__list{
     padding: 0 16px;
 
     display: flex;
     gap: 4px;
     overflow-x: scroll;
 }
-.navBlock__item{}
-.navBlock__link{
+.nav-block__item{}
+.nav-block__link{
     display: block;
 
     color: #7E7E82;
@@ -191,31 +191,31 @@ p+p{
     padding: 4px 12px 4px 12px;
     border: 2px solid rgba(184, 255, 236, 0);
 }
-.navBlock__link:hover{
+.nav-block__link:hover{
     color: #7E7E82;
 }
-.navBlock__link:focus{
+.nav-block__link:focus{
     outline: none;
     border: 2px solid #B8FFEC;
 }
-.navBlock__item--activePage{
+.nav-block__item--active-page{
     display: none;
 }
 
 
 /*----------------content*/
 
-.contentBlock{}
-.contentBlock__imgMask{
+.content-block{}
+.content-block__img-mask{
     overflow: hidden;
 }
-.contentBlock__img{
+.content-block__img{
     /*width: 100%;*/
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.contentBlock__text{
+.content-block__text{
     padding: 0 16px;
     max-height: 90px;
     overflow: hidden;
@@ -228,80 +228,80 @@ p+p{
     line-height: 18px; /* 128.571% */
     letter-spacing: 0.2px;
 }
-.contentBlock__p{}
-.contentBlock__readBtn{
+.content-block__p{}
+.content-block__read-btn{
     width: 100%;
     padding: 0 16px;
     gap: 8px;
 }
-.contentBlock__readBtn:focus{
+.content-block__read-btn:focus{
     outline: 2px solid #B8FFEC;
 }
-.contentBlock--isOpen>.contentBlock__text{
+.content-block--is-open>.content-block__text{
     max-height: fit-content;
 }
-.contentBlock--isOpen>.contentBlock__readBtn{
+.content-block--is-open>.content-block__read-btn{
     display: none;
 }
 
 
 /*----------------media*/
 @media (max-width: 575px){
-    .xsDisabled{
+    .xs-disabled{
         display: none
     }
-    .contentBlock{
+    .content-block{
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
-    .contentBlock__imgMask{
+    .content-block__img-mask{
         order: 1;
         height: 176px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 991px){
-    .smDisabled,.mdDisabled{
+    .sm-disabled,.md-disabled{
         display: none
     }
     .main{
         gap: 32px;
         padding-bottom: 40px;
     }
-    .titleBlock__text,.navBlock__list,.contentBlock__text,.contentBlock__readBtn{
+    .title-block__text,.nav-block__list,.content-block__text,.content-block__read-btn{
         padding: 0 24px;
     }
-    .navBlock:before,.navBlock:after{
+    .nav-block:before,.nav-block:after{
         width: 24px;
     }
-    .contentBlock__imgMask{
+    .content-block__img-mask{
         float: right;
         width: 50%;
         padding-left: 24px;
         margin-right: 24px;
         height: 208px;
     }
-    .contentBlock__img{
+    .content-block__img{
         border-radius: 6px;
     }
-    .contentBlock__text{
+    .content-block__text{
         max-height: 160px;
         line-height: 20px;
     }
-    .contentBlock__readBtn{
+    .content-block__read-btn{
         width: auto;
         padding: 0 10px 0 0;
         margin: 10px 24px 14px 24px;
         border-radius: 12px;
     }
-    .contentBlock--isOpen>.contentBlock__imgMask{
+    .content-block--is-open>.content-block__img-mask{
         padding-bottom: 24px;
     }
 }
 
 @media (min-width: 992px){
-    .lgPlusDisabled{
+    .lg-plus-disabled{
         display: none
     }
 
@@ -321,7 +321,7 @@ p+p{
         right: 0;
         gap: 16px;
     }
-    .header__itemBtn{
+    .header__item-btn{
         padding: 8px;
         border-radius: 20px;
         height: 56px;
@@ -332,32 +332,32 @@ p+p{
         gap: 8px;
     }
 
-    .titleBlock{
+    .title-block{
         width: fit-content;
     }
-    .titleBlock__text,.navBlock__list,.contentBlock__text,.contentBlock__readBtn{
+    .title-block__text,.nav-block__list,.content-block__text,.content-block__read-btn{
         padding: 0 32px;
     }
 
-    .navBlock:before,.navBlock:after{
+    .nav-block:before,.nav-block:after{
         width: 32px;
     }
-    .navBlock__list{
+    .nav-block__list{
         row-gap: 6px;
         flex-wrap: wrap;
         overflow-x: inherit;
     }
-    .navBlock__link{
+    .nav-block__link{
         padding: 4px 15px 4px 15px;
         border: 2px solid rgba(184, 255, 236, 0);
     }
-    .navBlock__link:focus{
+    .nav-block__link:focus{
     }
 
-    .contentBlock{
+    .content-block{
         margin-top: 2px;
     }
-    .contentBlock__imgMask{
+    .content-block__img-mask{
         float: right;
         width: 50%;
         padding-left: 32px;
@@ -365,20 +365,20 @@ p+p{
         aspect-ratio: 531/307;
         max-height: 70vh;
     }
-    .contentBlock__img{
+    .content-block__img{
         border-radius: 6px;
     }
-    .contentBlock__text{
+    .content-block__text{
         max-height: 160px;
         line-height: 20px;
     }
-    .contentBlock__readBtn{
+    .content-block__read-btn{
         width: auto;
         padding: 0 14px 0 0;
         margin: 10px 32px 14px 32px;
         border-radius: 12px;
     }
-    .contentBlock--isOpen>.contentBlock__imgMask{
+    .content-block--is-open>.content-block__img-mask{
         padding-bottom: 24px;
     }
 }
