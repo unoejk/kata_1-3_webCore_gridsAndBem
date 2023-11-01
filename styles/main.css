@@ -72,7 +72,7 @@ p+p{
     display: block;
 }
 
-.separatorBefore::before{
+.separator-before:before{
     content: '';
     width: 2px;
     height: 32px;
@@ -116,7 +116,7 @@ p+p{
     margin: 4px;
 }
 
-.logoImg{
+.logo-img{
     height: 50px;
 }
 
